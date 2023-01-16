@@ -2,6 +2,6 @@ import React from "react";
 
 export function Main(props){
     return(
-        <p>Some text here</p>
+        <h1>Some text here</h1>
     )
 }

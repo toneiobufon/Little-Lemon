@@ -1,7 +1,17 @@
 import React from "react";
 
-export function Nv(props){
+export function Nav(props){
     return(
-        <p>Some text here</p>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#reservations">Reservations</a>
+                <a href="orderonline">Order Online</a>
+                <a href="login">Login</a>
+
+            </li>
+        </ul>
     )
 }
