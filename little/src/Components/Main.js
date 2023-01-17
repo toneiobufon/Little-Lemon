@@ -1,7 +1,7 @@
 import React from "react";
 
-export function Main(props){
+export default function Main(props){
     return(
-        <h1>Some text here</h1>
+        <h1>Some main content here</h1>
     )
 }

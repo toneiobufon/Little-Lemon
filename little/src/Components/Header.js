@@ -1,7 +1,8 @@
 import React from "react";
+import Logo from '../images/Logo.svg' 
 
-export function Header(props){
+export default function Header(props){
     return(
-        <img src="../images/Logo.svg"></img>
+        <img src={Logo} alt="Little Lemon Logo"/>
     )
 }

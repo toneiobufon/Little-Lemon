@@ -1,7 +1,7 @@
 import React from "react";
 
-export function Footer(props){
+export default function Footer(props){
     return(
-        <p>Some text here</p>
+        <p>Some footer text here</p>
     )
 }
