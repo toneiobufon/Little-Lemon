@@ -1,7 +1,62 @@
-.container {
+ /* body{
+    background-color: bisque;
+    font-family: 'Markazi Text', serif;
+    margin-top:  3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+} */
+
+ .container {
 
   display: grid;
   grid-template-columns:repeat(3, 100px);
   grid-template-rows: 2fr 1fr;
 
   }
+
+  ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    flex-direction: row;
+  }
+  ul li{
+    display: flex;
+    justify-content: space-evenly;
+  }
+   ul li a{
+    text-decoration: none;
+    padding: 1rem;
+   }
+.specialsHeading{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.orderOnline{
+  height:fit-content;
+  margin-top: 2rem;
+
+}
+
+section{
+  display: flex;
+  padding: 3rem;
+}
+
+article{
+  width: 400px;
+  margin: .5rem;
+}
+.footer{
+  display: flex;
+}
+.footerDiv  ul{
+  
+  display: flex;
+  flex-direction: column;
+}
+
+
