@@ -1,5 +1,8 @@
 import React from "react";
 import Nav from "./Nav";
+import Header from "./Header";
+
+
 
 
 
@@ -7,7 +10,8 @@ export default function Footer(){
     return(
         <footer>
         
-            <img src='../images/Logo .svg' alt="Little Lemon Logo" />
+          
+            <Header/>
         
             <div>
                 <Nav/>

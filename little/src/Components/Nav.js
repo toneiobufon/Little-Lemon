@@ -1,14 +1,6 @@
 import React from "react";
 
 
-
-
-
-
-
-
-
-
 export default function Nav(){
     return(
         <>
@@ -21,7 +13,7 @@ export default function Nav(){
             <li><a href="/orderonline">Order Online</a></li>
             <li><a href="/login">Login</a></li>
         </ul>
-        
+
              </>
     )
 }

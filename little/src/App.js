@@ -23,9 +23,9 @@ import Login from './Components/Login';
 function App() {
   return (
     <>
-    <Header/>
-    <Nav/>
-    <BrowserRouter>
+      <Header/>
+      <Nav/>
+      <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/about' element={<About/>}></Route>
@@ -34,8 +34,8 @@ function App() {
           <Route path='/orderonline' element={<OrderOnline/>}></Route>
           <Route path='login' element={<Login/>}></Route>
         </Routes>
-    </BrowserRouter>
-    <Footer/>
+      </BrowserRouter>
+      <Footer/>
     </>
   );
   
