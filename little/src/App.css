@@ -1,11 +1,11 @@
- /* body{
+ body{
     background-color: bisque;
     font-family: 'Markazi Text', serif;
     margin-top:  3rem;
     margin-bottom: 3rem;
     margin-left: 5%;
     margin-right: 5%;
-} */
+}
 
  .container {
 
@@ -49,6 +49,7 @@ section{
 article{
   width: 400px;
   margin: .5rem;
+ 
 }
 .footer{
   display: flex;
@@ -59,4 +60,10 @@ article{
   flex-direction: column;
 }
 
+
+article img{
+  width: 270px;
+  height: 230px;
+  object-fit: cover;
+}
 
