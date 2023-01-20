@@ -1,16 +1,34 @@
 import React from "react";
-import Greeksalad from '../images/Greeksalad.jpg'
-import bruchetta from '../images/bruchetta.svg'
-import LemonDessert from '../images/LemonDessert.jpg'
+
+// images
+import Greeksalad from '../images/Greeksalad.jpg';
+import bruchetta from '../images/bruchetta.svg';
+import LemonDessert from '../images/LemonDessert.jpg';
+import Restaurantchef from '../images/Restaurantchef.jpg';
+import HomeIcon from '../images/HomeIcon.svg'
+import ChefsA from '../images/ChefsA.jpg';
+import FoodPlatter from '../images/FoodPlatter.jpg'
 
 export default function Main(){
     return(
         <>
         <section>
+            <article>
+            <h1> Little Lemon</h1>
+            <h2>Chicago</h2>
+            <p>We are a family owned Mediterranean restaurant, 
+                focused on traditional recipes served with a modern twist.</p>
+            <button>Reserve a table</button>
+            </article>
+            <img className="RestaurantChef" src={Restaurantchef} alt="Restaurant chef"/>
             
         </section>
         <div className="specialsHeading">
             <h1 className="specialsH1">Specials</h1>
+            <a href="/">
+                <img src={HomeIcon} alt="Home Icon"/>
+            </a>
+            
             <button className="orderOnline">Order Online</button>
         </div>
         <section>
@@ -37,7 +55,21 @@ export default function Main(){
                     authentic as can be imagined.</p>
                 <button>Order a delivery</button>
             </article>
+           
         </section>
+        <section>
+            <article>
+                <h1> Little Lemon</h1>
+                <h2>Chicago</h2>
+                <p>We are a family owned Mediterranean restaurant, 
+                    focused on traditional recipes served with a modern twist.</p>
+            
+            </article>
+            <a href="/">
+                <img className="ChefsA" src={ChefsA} alt="Restaurant chefs"/>
+                <img className="FoodPlatter" src={FoodPlatter} alt="Food Platter"/>
+            </a>
+            </section>
         </>
     )
 }

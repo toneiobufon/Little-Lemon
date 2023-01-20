@@ -67,3 +67,21 @@ article img{
   object-fit: cover;
 }
 
+.RestaurantChef{
+  width: 270px;
+  height: 230px;
+  border-radius: 7px;
+}
+
+.ChefsA{
+  width: 270px;
+  height: 230px;
+  border-radius: 7px;
+}
+.FoodPlatter{
+  width: 270px;
+  height: 230px;
+  border-radius: 7px;
+  margin-left: -20px;
+  margin-bottom: 30px;
+}
