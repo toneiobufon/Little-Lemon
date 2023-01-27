@@ -116,3 +116,7 @@ footer {
   justify-content: space-around;
 
 }
+
+.column li{
+  padding-left: px;
+}
