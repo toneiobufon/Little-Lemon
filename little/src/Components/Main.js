@@ -11,9 +11,9 @@ import FoodPlatter from '../images/FoodPlatter.jpg'
 
 export default function Main(){
     return(
-        <>
-        <section>
-            <article>
+        <frameElement>
+        <section className="row">
+            <article className="col-6-md">
             <h1> Little Lemon</h1>
             <h2>Chicago</h2>
             <p>We are a family owned Mediterranean restaurant, 
@@ -31,7 +31,7 @@ export default function Main(){
             
             <button className="orderOnline">Order Online</button>
         </div>
-        <section>
+        <section className="row">
             <article>
                 <img src={Greeksalad} alt="Greek Salad"/>
                 <h1>Greek Salad       $12.99</h1>
@@ -58,18 +58,21 @@ export default function Main(){
            
         </section>
         <section>
-            <article>
+            <article className="col-6-md">
                 <h1> Little Lemon</h1>
                 <h2>Chicago</h2>
                 <p>We are a family owned Mediterranean restaurant, 
                     focused on traditional recipes served with a modern twist.</p>
             
             </article>
-            <a href="/">
-                <img className="ChefsA" src={ChefsA} alt="Restaurant chefs"/>
-                <img className="FoodPlatter" src={FoodPlatter} alt="Food Platter"/>
+            <a href="/" >
+                {/* <img className="ChefsA" src={ChefsA} alt="Restaurant chefs" /> */}
+                <img className="col-3-sm" src={ChefsA} alt="Restaurant chefs" />
+                {/* <img className="FoodPlatter" src={FoodPlatter} alt="Food Platter"/> */}
+                <img className="col-3-sm-2" src={FoodPlatter} alt="Food Platter"/>
+
             </a>
             </section>
-        </>
+        </frameElement>
     )
 }

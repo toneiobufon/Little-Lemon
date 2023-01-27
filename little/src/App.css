@@ -28,6 +28,11 @@
    ul li a{
     text-decoration: none;
     padding: 1rem;
+    color: black;
+    
+   }
+   ul li a:hover{
+    color: gray;
    }
 .specialsHeading{
   display: flex;
@@ -73,15 +78,41 @@ article img{
   border-radius: 7px;
 }
 
-.ChefsA{
+/* .ChefsA{
   width: 270px;
   height: 230px;
   border-radius: 7px;
+} */
+.col-3-sm{
+  max-width:190px ;
+  height: 230px;
+  border-radius: 7px;
+  margin-left: 4px;
 }
-.FoodPlatter{
+/* .FoodPlatter{
   width: 270px;
   height: 230px;
   border-radius: 7px;
   margin-left: -20px;
   margin-bottom: 30px;
+} */
+.col-3-sm-2{
+  width: 190px;
+  height: 230px;
+  border-radius: 7px;
+  margin-left: 4px;
+ 
+}
+
+.footerInfo ul{
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+
 }

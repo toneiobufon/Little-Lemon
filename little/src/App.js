@@ -23,8 +23,10 @@ import Login from './Components/Login';
 function App() {
   return (
     <>
+      <div >
       <Header/>
-      <Nav/>
+      <Nav />
+      </div>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
