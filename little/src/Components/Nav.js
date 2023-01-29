@@ -1,5 +1,6 @@
 import React from "react";
-import Hammenu from '../images/🦆 Hammenu.svg';
+import Logo from '../images/Logo .svg'
+// import Hammenu from '../images/🦆 Hammenu.svg';
 // import Hammenu2 from '../images/🦆 Hammenu2.svg';
 
 
@@ -14,63 +15,27 @@ export default function Nav(){
 
     return(
         
-        // <nav className="navBar">
-        //     <button onClick={handleToggle}>{navbarOpen ? ('X') : (<img src={Hammenu} alt='Open'/>) }</button>
-            
+       <nav className="navbar navbar-expand-lg ">
+        <div className="container">
+            <img src={Logo} alt="" />
+            <button className="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span className="navbar-toggler-icon "></span>
+            </button>
 
-        //     <ul className='navBar'>
-        //         <li><a className="navBar" href="/">Home</a></li>
-        //         <li><a className="navBar" href="/about">About</a></li>
-        //         <li><a className="navBar" href="/menu">Menu</a></li>
-        //         <li><a className="navBar" href="/reservations">Reservations</a></li>
-        //         <li><a className="navBar" href="/orderonline">Order Online</a></li>
-        //         <li><a className="navBar" href="/login">Login</a></li>
-        //     </ul>
-            
-        // </nav>
+            <div className="collapse navbar-collapse" id="navmenu">
+                <ul className="navbar-nav ms-auto" >
+                   <li><a className="nav-link text-dark" href="/">Home</a></li>
+                   <li><a className="nav-link text-dark" href="/about">About</a></li>
+                   <li><a className="nav-link text-dark" href="/menu">Menu</a></li>
+                   <li><a className="nav-link text-dark" href="/reservations">Reservations</a></li>
+                   <li><a className="nav-link text-dark" href="/orderonline">Order Online</a></li>
+                   <li><a className="nav-link text-dark" href="/login">Login</a></li>
+                </ul>
 
-
-        <nav class="navbar navbar-light light-blue lighten-4">
-
-  {/* <!-- Navbar brand --> */}
-  <img class="navbar-brand" href={Hammenu}alt="Menu"/>
-
-  {/* <!-- Collapse button --> */}
-  <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
-        class="fas fa-bars fa-1x"></i></span> <img src={Hammenu}/></button>
-
-  {/* <!-- Collapsible content --> */}
-  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-
-    {/* <!-- Links --> */}
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/menu">Menu</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/reservations">Reservations</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/orderonline">Order Online</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/login">Login</a>
-      </li>
-    </ul>
-    {/* <!-- Links --> */}
-
-  </div>
-  {/* <!-- Collapsible content --> */}
-
-</nav>
-
-            
+            </div>
+        </div>
+       </nav>
+                
     )
 }

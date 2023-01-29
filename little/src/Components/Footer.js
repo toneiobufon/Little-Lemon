@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
-import Header from "./Header";
+
 
 
 
@@ -9,7 +9,7 @@ import Header from "./Header";
 export default function Footer(){
     return(
         <footer className="row">
-            <Header/>
+           
             <div  className='footerInfo'>
                 <Nav/>
             </div>
