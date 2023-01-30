@@ -25,10 +25,15 @@
     display: flex;
     justify-content: space-evenly;
   } */
+  .ms-auto{
+    
+    align-items: center;
+  }
 
-   .mr-auto :hover{
-    color: gray;
-    font-style: italic;
+   .ms-auto :hover{
+    color: white;
+    font-style: italic bold;
+    background-color: gray;
    }
 .specialsHeading{
   display: flex;

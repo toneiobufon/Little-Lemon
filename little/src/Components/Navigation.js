@@ -16,6 +16,7 @@ export default function Navigation(){
     // }
 
     return(
+       
         
        <Navbar collapseOnSelect expand="lg">
         
@@ -23,8 +24,8 @@ export default function Navigation(){
                 <img src={Logo} alt="Little Lemon" />
             </a>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
+            <Navbar.Collapse id="responsive-navbar-nav" >
+                <Nav className="ms-auto">
                     <Nav.Link href="/">Home</Nav.Link>
                     <Nav.Link href="/about">About</Nav.Link>
                     <Nav.Link href="/menu">Menu</Nav.Link>
@@ -50,6 +51,7 @@ export default function Navigation(){
             </div> */}
     
        </Navbar>
+      
                 
     )
 }
