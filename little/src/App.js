@@ -6,7 +6,7 @@ import Footer from './Components/Footer';
 import Home from './Components/Home';
 
 
-import Nav from './Components/Nav';
+import Navigation from './Components/Navigation';
 // import Main from './Components/Main';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import About from './Components/About';
@@ -24,7 +24,7 @@ function App() {
   return (
     <>
     
-      <Nav />
+      <Navigation />
 
       <BrowserRouter>
         <Routes>

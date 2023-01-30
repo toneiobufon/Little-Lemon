@@ -15,24 +15,20 @@
 
   }
 
-  ul{
+  /* ul{
     display: flex;
     justify-content: flex-end;
     list-style: none;
     flex-direction: row;
-  }
-  ul li{
+  } */
+  /* ul li{
     display: flex;
     justify-content: space-evenly;
-  }
-   ul li a{
-    text-decoration: none;
-    padding: 1rem;
-    color: black;
-    
-   }
-   ul li a:hover{
+  } */
+
+   .mr-auto :hover{
     color: gray;
+    font-style: italic;
    }
 .specialsHeading{
   display: flex;
@@ -117,6 +113,6 @@ footer {
 
 }
 
-.column li{
-  padding-left: px;
-}
+/* .column li{
+  padding-left: -5px;
+} */

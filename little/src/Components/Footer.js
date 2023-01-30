@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "./Nav";
+import Navigation from "./Navigation";
 
 
 
@@ -9,9 +9,10 @@ import Nav from "./Nav";
 export default function Footer(){
     return(
         <footer className="row">
+            
            
             <div  className='footerInfo'>
-                <Nav/>
+                <Navigation/>
             </div>
             <span className="footerContact">
                 <h1>Contact</h1>
@@ -32,6 +33,7 @@ export default function Footer(){
                 </div>
             </span>
             <p>Copyright @ 2023 LITTLE LEMON RESTAURANT</p>
+           
         </footer>
         
     )
