@@ -39,8 +39,9 @@ export default function Main(){
             </a>
             </Col>
             <Col>
-            
-            <button className="orderOnline">Order Online</button>
+                <a href="/orderonline">
+                    <button className="orderOnline">Order Online</button>
+                </a>
             </Col>
         </Row>
         <Row className="specials">

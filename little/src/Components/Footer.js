@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "./Navigation";
 import { Col,Row } from "react-bootstrap";
+import {Instagram,Facebook,Twitter,Tiktok } from "react-bootstrap-icons"
 
 
 
@@ -24,10 +25,24 @@ export default function Footer(){
                 <Col>
                     <h1>Socials</h1>
                     <div>
-                        <p>Instagram</p>
-                        <p>Facebook</p>
-                        <p>Twiter</p>
-                        <p>Tiktok</p>
+                        <div className="iconSocial">
+                            <Instagram/>
+                            <p>Instagram</p>
+                        </div>
+                        <div className="iconSocial">
+                            <Facebook/>
+                            <p>Facebook</p>
+                        </div>
+                        <div className="iconSocial">
+                            <Twitter/>
+                            <p>Twitter</p>
+                        </div>
+                        <div className="iconSocial">
+                            <Tiktok/>
+                            <p>Tiktok</p>
+                        </div>
+                        
+                        
                     </div>
                 </Col>
             </Row>

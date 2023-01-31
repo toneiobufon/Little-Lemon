@@ -93,10 +93,11 @@ Footer {
 
 .footerNav Navigation{
   display: grid;
- 
-  
- 
- 
-  
 }
 
+.iconSocial{
+  display: flex;
+  margin: 5px;
+  align-items: baseline;
+  
+}
