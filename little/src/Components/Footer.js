@@ -13,20 +13,20 @@ export default function Footer(){
         
        
             <Row>
-                <Col className="footerNav">
+                <Col className="footerNav col-12 p-5" >
                         <Navigation/>
                 </Col>
-                <Col>
+                <Col className="col-6 p-3 text-center">
                     <h1>Contact</h1>
                     <p>42nd Street, Chicago, Illinois</p>
                     <p>(239) 289-2214</p>
                     <p>limoncito@littlelemon.com</p>
                 </Col>
-                <Col>
-                    <h1>Socials</h1>
-                    <div>
+                <Col className="col-6 text-center">
+                    <section className="socials">
+                        <h1>Socials</h1>
                         <div className="iconSocial">
-                            <Instagram/>
+                            <Instagram />
                             <p>Instagram</p>
                         </div>
                         <div className="iconSocial">
@@ -41,9 +41,10 @@ export default function Footer(){
                             <Tiktok/>
                             <p>Tiktok</p>
                         </div>
+                    </section>
                         
                         
-                    </div>
+                    
                 </Col>
             </Row>
        

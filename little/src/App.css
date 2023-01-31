@@ -15,6 +15,10 @@
 
   }
 
+  .Navbar{
+    padding: 1rem 0 3rem 0;
+  }
+
 Row{
   align-items: center;
   margin: 1rem;
@@ -83,21 +87,22 @@ article img{
   margin-left: 4px;
  
 }
-/* 
-Footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 
-} */
 
 .footerNav Navigation{
   display: grid;
 }
 
+section.socials{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  align-items: center;
+}
 .iconSocial{
   display: flex;
-  margin: 5px;
   align-items: baseline;
+  
+  
   
 }

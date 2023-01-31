@@ -23,6 +23,7 @@ import Login from './Components/Login';
 function App() {
   return (
     <>
+   
     
       <Navigation />
 
@@ -38,6 +39,7 @@ function App() {
       </BrowserRouter>
       <Footer/>
       <p className='text-center text-bold p-3'>Copyright @ 2023 : LITTLE LEMON RESTAURANT</p>
+    
       </>
   );
   
