@@ -1,5 +1,6 @@
 import React from "react";
-
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 // images
 import Greeksalad from '../images/Greeksalad.jpg';
 import bruchetta from '../images/bruchetta.svg';
@@ -12,7 +13,9 @@ import FoodPlatter from '../images/FoodPlatter.jpg'
 export default function Main(){
     return(
         <frameElement>
-        <section className="row">
+            
+        <Row >
+            <Col>
             <article className="col-6-md">
             <h1> Little Lemon</h1>
             <h2>Chicago</h2>
@@ -20,18 +23,28 @@ export default function Main(){
                 focused on traditional recipes served with a modern twist.</p>
             <button>Reserve a table</button>
             </article>
+            </Col>
+            <Col>
             <img className="RestaurantChef" src={Restaurantchef} alt="Restaurant chef"/>
+            </Col>
             
-        </section>
-        <div className="specialsHeading">
+        </Row>
+        <Row className="specialsHeading">
+            <Col>
             <h1 className="specialsH1">Specials</h1>
+            </Col>
+            <Col>
             <a href="/">
                 <img src={HomeIcon} alt="Home Icon"/>
             </a>
+            </Col>
+            <Col>
             
             <button className="orderOnline">Order Online</button>
-        </div>
-        <section className="row">
+            </Col>
+        </Row>
+        <Row className="specials">
+            <Col>
             <article>
                 <img src={Greeksalad} alt="Greek Salad"/>
                 <h1>Greek Salad       $12.99</h1>
@@ -40,6 +53,8 @@ export default function Main(){
                     crunchy garlic and rosemary croutons. </p>
                 <button>Order a delivery</button>
             </article>
+            </Col>
+            <Col>
             <article>
                 <img className="bruchetta" src={bruchetta} alt="Bruchetta"/>
                 <h1>Bruchetta    $5.99</h1>
@@ -47,6 +62,8 @@ export default function Main(){
                 smeared with garlic and seasoned with salt and olive oil. </p>
                 <button>Order a delivery</button>
             </article>
+            </Col>
+            <Col>
             <article>
                 <img src={LemonDessert} alt="Lemon Dessert"/>
                 <h1>Lemon Dessert  $4.99</h1>
@@ -55,9 +72,11 @@ export default function Main(){
                     authentic as can be imagined.</p>
                 <button>Order a delivery</button>
             </article>
+            </Col>
            
-        </section>
-        <section>
+        </Row>
+        <Row>
+            <Col>
             <article className="col-6-md">
                 <h1> Little Lemon</h1>
                 <h2>Chicago</h2>
@@ -65,14 +84,14 @@ export default function Main(){
                     focused on traditional recipes served with a modern twist.</p>
             
             </article>
+            </Col>
+            <Col>
             <a href="/" >
-                {/* <img className="ChefsA" src={ChefsA} alt="Restaurant chefs" /> */}
                 <img className="col-3-sm" src={ChefsA} alt="Restaurant chefs" />
-                {/* <img className="FoodPlatter" src={FoodPlatter} alt="Food Platter"/> */}
                 <img className="col-3-sm-2" src={FoodPlatter} alt="Food Platter"/>
-
             </a>
-            </section>
+            </Col>
+            </Row>
         </frameElement>
     )
 }

@@ -2,24 +2,18 @@ import React from "react";
 import Logo from '../images/Logo .svg'
 import {Nav, Navbar} from 'react-bootstrap';
 
-// import Hammenu from '../images/🦆 Hammenu.svg';
-// import Hammenu2 from '../images/🦆 Hammenu2.svg';
+
 
 
 
 export default function Navigation(){
 
-    // const [navbarOpen, setNavbarOpen] = useState(false);
 
-    // const handleToggle = () => {
-    //     setNavbarOpen(!navbarOpen)
-    // }
 
     return(
-       
+    
         
-       <Navbar collapseOnSelect expand="lg">
-        
+       <Navbar className="Navbar" collapseOnSelect expand="lg"> 
             <a href="/">
                 <img src={Logo} alt="Little Lemon" />
             </a>
@@ -35,23 +29,7 @@ export default function Navigation(){
 
                 </Nav>
             </Navbar.Collapse>
-            
-                
-          
-
-            {/* <div className="collapse navbar-collapse" show={navbarOpen}>
-                <ul className="navbar-nav ms-auto" >
-                   <li className="nav-item"><a className="nav-link text-dark" href="/">Home</a></li>
-                   <li className="nav-item"><a className="nav-link text-dark" href="/about">About</a></li>
-                   <li className="nav-item"><a className="nav-link text-dark" href="/menu">Menu</a></li>
-                   <li className="nav-item"><a className="nav-link text-dark" href="/reservations">Reservations</a></li>
-                   <li className="nav-item"><a className="nav-link text-dark" href="/orderonline">Order Online</a></li>
-                   <li className="nav-item"><a className="nav-link text-dark" href="/login">Login</a></li>
-                </ul>
-            </div> */}
     
-       </Navbar>
-      
-                
+       </Navbar>        
     )
 }

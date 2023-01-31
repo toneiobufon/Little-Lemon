@@ -15,16 +15,12 @@
 
   }
 
-  /* ul{
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    flex-direction: row;
-  } */
-  /* ul li{
-    display: flex;
-    justify-content: space-evenly;
-  } */
+Row{
+  align-items: center;
+  margin: 1rem;
+}
+
+  
   .ms-auto{
     
     align-items: center;
@@ -35,25 +31,18 @@
     font-style: italic bold;
     background-color: gray;
    }
+
 .specialsHeading{
-  display: flex;
-  justify-content: space-between;
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-.orderOnline{
-  height:fit-content;
-  margin-top: 2rem;
-
+  padding: 1.5rem;
 }
 
-section{
+.specials{
   display: flex;
-  padding: 3rem;
+  
 }
 
 article{
-  width: 400px;
+  width: 250px;
   margin: .5rem;
  
 }
@@ -79,24 +68,14 @@ article img{
   border-radius: 7px;
 }
 
-/* .ChefsA{
-  width: 270px;
-  height: 230px;
-  border-radius: 7px;
-} */
+
 .col-3-sm{
   max-width:190px ;
   height: 230px;
   border-radius: 7px;
   margin-left: 4px;
 }
-/* .FoodPlatter{
-  width: 270px;
-  height: 230px;
-  border-radius: 7px;
-  margin-left: -20px;
-  margin-bottom: 30px;
-} */
+
 .col-3-sm-2{
   width: 190px;
   height: 230px;
@@ -104,20 +83,20 @@ article img{
   margin-left: 4px;
  
 }
-
-.footerInfo ul{
+/* 
+Footer {
   display: flex;
-  flex-direction: column;
-  margin: 15px;
+  justify-content: space-around;
+  align-items: center;
+
+} */
+
+.footerNav Navigation{
+  display: grid;
+ 
+  
+ 
+ 
   
 }
 
-footer {
-  display: flex;
-  justify-content: space-around;
-
-}
-
-/* .column li{
-  padding-left: -5px;
-} */
