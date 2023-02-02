@@ -11,7 +11,7 @@ import Navigation from './Components/Navigation';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import About from './Components/About';
 import Menu from './Components/Menu';
-import Reservations from './Components/Reservations.js';
+import BookingPage from './Components/BookingPage';
 import OrderOnline from './Components/OrderOnline';
 import Login from './Components/Login';
 
@@ -32,7 +32,7 @@ function App() {
           <Route path='/' element={<Home/>}></Route>
           <Route path='/about' element={<About/>}></Route>
           <Route path='/menu' element={<Menu/>}></Route>
-          <Route path='/reservations' element={<Reservations/>}></Route>
+          <Route path='/reservations' element={<BookingPage/>}></Route>
           <Route path='/orderonline' element={<OrderOnline/>}></Route>
           <Route path='login' element={<Login/>}></Route>
         </Routes>

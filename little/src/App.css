@@ -111,8 +111,14 @@ section.socials{
 
 Form {
   
-  margin-left: 3rem;
+  margin: 0 3rem 0 3rem;
+  max-width: 400px;
   
 }
 
+.reserveButton:hover{
+  background-color: yellow;
+  color: black;
+  border: 15px;
+}
 
