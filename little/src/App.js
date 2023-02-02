@@ -11,7 +11,7 @@ import Navigation from './Components/Navigation';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import About from './Components/About';
 import Menu from './Components/Menu';
-import Reservations from './Components/Reservations';
+import Reservations from './Components/Reservations.js';
 import OrderOnline from './Components/OrderOnline';
 import Login from './Components/Login';
 

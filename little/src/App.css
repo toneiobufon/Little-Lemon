@@ -5,6 +5,7 @@
     margin-bottom: 3rem;
     margin-left: 5%;
     margin-right: 5%;
+    align-items: center;
 }
 
  .container {
@@ -89,6 +90,7 @@ article img{
 }
 
 
+
 .footerNav Navigation{
   display: grid;
 }
@@ -106,3 +108,11 @@ section.socials{
   
   
 }
+
+Form {
+  
+  margin-left: 3rem;
+  
+}
+
+
