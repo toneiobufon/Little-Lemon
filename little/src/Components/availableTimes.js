@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function availableTimes(){
+function AvailableTimes(){
     return(
         <>
         const Times =
@@ -19,4 +19,4 @@ function availableTimes(){
 
 }
 
-export default availableTimes;
+export default AvailableTimes;
