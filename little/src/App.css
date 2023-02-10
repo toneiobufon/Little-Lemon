@@ -122,3 +122,7 @@ Form {
   border: 15px;
 }
 
+button{
+  border-radius: 8px;
+  background-color: yellow;
+}

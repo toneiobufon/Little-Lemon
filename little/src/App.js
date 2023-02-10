@@ -1,9 +1,10 @@
 
 import './App.css';
 import Footer from './Components/Footer';
-// import Header from './Components/Header';
+
 
 import Home from './Components/Home';
+import AvailableTimes from './Components/AvailableTimes';
 
 
 import Navigation from './Components/Navigation';
@@ -14,6 +15,7 @@ import Menu from './Components/Menu';
 import BookingPage from './Components/BookingPage';
 import OrderOnline from './Components/OrderOnline';
 import Login from './Components/Login';
+import { useState } from 'react';
 
 
 
@@ -21,6 +23,18 @@ import Login from './Components/Login';
 
 
 function App() {
+
+  const [AvailableTimes] = useState([
+           {time: '17:00'},
+           {time: '18:00'},
+           {time: '19:00'},
+           {time: '20:00'},
+           {time: '21:00'},
+           {time: '22:00'},
+
+  ])
+
+
   return (
     <>
    

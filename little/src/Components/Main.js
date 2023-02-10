@@ -38,9 +38,9 @@ export default function Main(){
                 <img src={HomeIcon} alt="Home Icon"/>
             </a>
             </Col>
-            <Col>
+            <Col >
                 <a href="/orderonline">
-                    <button className="orderOnline">Order Online</button>
+                    <button  className="orderOnline">Order Online</button>
                 </a>
             </Col>
         </Row>

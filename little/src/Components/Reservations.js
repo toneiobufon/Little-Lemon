@@ -1,30 +1,25 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
-// import AvailableTimes from "./AvailableTimes.js";
+import AvailableTimes from "./AvailableTimes.js";
 
 
 function ReservationsForm (){
 
 
-    //might be needed
-    const [date, setDate] = useState('');
-    const [time, setTime] = useState('');
-    const [guests, setGuests] = useState('');
-    const [ocassion, setOcassion] = useState('')
 
-    const [validated, setValidated] = useState(false);
 
-    const getForm =() =>{
-        return (
-            date &&
-            time &&
-            guests &&
-            ocassion 
-        );
-    }
+    const [form, setForm] = useState({
+        date: '',
+        time: '',
+        guests: '',
+        ocassion: '',
+    });
+
+
+
 
 
     const handleSubmit=(e) =>{
@@ -33,35 +28,47 @@ function ReservationsForm (){
             e.preventDefault();
             e.stopPropagation();
         }
-        setValidated(true)
-        alert('Reservation Confirmed');
-        console.log('reserved', getForm())
+        setForm(true)
+        
+        alert('Reservation Confirmed', 
+     
+        
+            );
+       
+        
+        
     } 
 
     return (
         <>
         
         
-         <Form validated={validated} onSubmit={handleSubmit} className="col-6 center">
+         <Form validated={form} onSubmit={handleSubmit} className="col-6 center">
          <h1>Reserve Here</h1>
-            <Form.Group className="mb-3" >
+            <Form.Group className="mb-3" value={form.date}>
                 <Form.Label>Choose a date</Form.Label>
                 <Form.Control 
                 type="date" 
                 placeholder="Date"
                 required
                 onChange={(e)=> {
-                    setDate(e.target.value)
+                    setForm({
+                        ...form, 
+                        date: e.target.value
+                    })
                 }}
                 />
                 
             </Form.Group>
 
-            <Form.Group className="mb-3" placeholder="Check available times" type='number'  defaultValue=''>
+            <Form.Group className="mb-3" placeholder="Check available times" type='number' value={form.time}  defaultValue=''>
                 <Form.Label>Choose from the available times</Form.Label>
                 <Form.Control as='select'  required 
                 onChange={(e)=>{
-                    setTime(e.target.value)
+                    setForm({
+                        ...form, 
+                        time: e.target.value
+                    })
                 }}
                 >
                         <option value=''>Select a time</option>
@@ -75,20 +82,26 @@ function ReservationsForm (){
                 </Form.Control>
             </Form.Group>
 
-            <Form.Group className="mb-3" >
+            <Form.Group className="mb-3" value={form.guests}>
                 <Form.Label>Number of guests</Form.Label>
-                <Form.Control required type="number"  defaultValue={0} min={1} max={10}
+                <Form.Control required type="number"  defaultValue={2} min={1} max={10}
                 onChange={(e)=>{
-                    setGuests(e.target.value)
+                    setForm({
+                        ...form, 
+                        guests: e.target.value
+                    })
                 }}
                 />
             </Form.Group>
 
-            <Form.Group className="mb-3" noValidate  >
+            <Form.Group className="mb-3" noValidate value={form.ocassion}  >
                 <Form.Label>Occasion</Form.Label>
                 <Form.Control  as='select' aria-label="Select an option" required
                 onChange={(e) =>{
-                    setOcassion(e.target.value)
+                    setForm({
+                        ...form, 
+                        ocassion: e.target.value
+                    })
                 }}
                 
                 >
@@ -98,7 +111,7 @@ function ReservationsForm (){
                     <option value='Other'>Other</option>
                 </Form.Control>
             </Form.Group>
-            <Button className="reserveButton" variant="primary" type="submit" disabled={!setValidated}>
+            <Button className="reserveButton" variant="primary" type="submit" disabled={!setForm}>
                 Book Now
             </Button>
         </Form> 
