@@ -15,7 +15,9 @@ import Menu from './Components/Menu';
 import BookingPage from './Components/BookingPage';
 import OrderOnline from './Components/OrderOnline';
 import Login from './Components/Login';
-import { useState } from 'react';
+import { useReducer, useState } from 'react';
+
+// import { useState } from 'react';
 
 
 
@@ -24,15 +26,22 @@ import { useState } from 'react';
 
 function App() {
 
-  const [AvailableTimes] = useState([
-           {time: '17:00'},
-           {time: '18:00'},
-           {time: '19:00'},
-           {time: '20:00'},
-           {time: '21:00'},
-           {time: '22:00'},
+  const [state, dispatch] = useReducer(updateTimes,InitializeTimes)
 
-  ])
+  function updateTimes(){
+    return (
+      AvailableTimes
+    )
+  }
+
+  function InitializeTimes(){
+    const [availableTimes, setAvailableTimes] = useState(AvailableTimes)
+
+  }
+
+ 
+
+
 
 
   return (

@@ -3,7 +3,7 @@ import React, { useState} from "react";
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
-import AvailableTimes from "./AvailableTimes.js";
+// import AvailableTimes from "./AvailableTimes.js";
 
 
 function ReservationsForm (){
@@ -28,12 +28,9 @@ function ReservationsForm (){
             e.preventDefault();
             e.stopPropagation();
         }
-        setForm(true)
-        
-        alert('Reservation Confirmed', 
-     
-        
-            );
+        // setForm(true)    
+        alert('Reservation Confirmed');
+       
        
         
         
@@ -43,7 +40,7 @@ function ReservationsForm (){
         <>
         
         
-         <Form validated={form} onSubmit={handleSubmit} className="col-6 center">
+         <Form validated={true} onSubmit={handleSubmit} className="col-6 center">
          <h1>Reserve Here</h1>
             <Form.Group className="mb-3" value={form.date}>
                 <Form.Label>Choose a date</Form.Label>
@@ -78,6 +75,7 @@ function ReservationsForm (){
                         <option value='20:00'>20:00</option>
                         <option value='21:00'>21:00</option>
                         <option value='22:00'>22:00</option> 
+                        
                        
                 </Form.Control>
             </Form.Group>
