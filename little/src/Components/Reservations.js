@@ -15,7 +15,7 @@ function ReservationsForm (){
         date: '',
         time: '',
         guests: '',
-        ocassion: '',
+        ocassion: ''
     });
 
 

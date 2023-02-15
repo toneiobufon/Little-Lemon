@@ -15,7 +15,7 @@ import Menu from './Components/Menu';
 import BookingPage from './Components/BookingPage';
 import OrderOnline from './Components/OrderOnline';
 import Login from './Components/Login';
-import { useReducer, useState } from 'react';
+import { useEffect, useReducer, useState } from 'react';
 
 // import { useState } from 'react';
 
@@ -35,7 +35,25 @@ function App() {
   }
 
   function InitializeTimes(){
-    const [availableTimes, setAvailableTimes] = useState(AvailableTimes)
+    const [availableTimes, setAvailableTimes] = useState([AvailableTimes])
+
+    const fetchData =() => {
+      fetch('https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js/date/time')
+        .then(response => response.json())
+        .then(data => setAvailableTimes(data));
+        console.log(setAvailableTimes)
+    }
+
+    useEffect(() => {
+      fetchData();
+    },[]);
+
+    return Object.keys(Date)(
+      <div>
+        <h2>{Date.results.date.time}</h2>
+      </div>
+    )
+    
 
   }
 
