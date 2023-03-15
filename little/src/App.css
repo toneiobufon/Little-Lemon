@@ -21,6 +21,7 @@
 
   .Navbar{
     padding: 1rem 0 3rem 0;
+    
   }
 
 Row{
@@ -56,6 +57,7 @@ article{
 }
 .footer{
   display: flex;
+ 
 }
 .footerDiv  ul{
   
@@ -94,8 +96,13 @@ article img{
 
 
 
-.footerNav Navigation{
+.footerNav {
   display: grid;
+  padding: -1rem;
+}
+
+.p-5{
+  padding: -1rem;
 }
 
 section.socials{
@@ -112,12 +119,7 @@ section.socials{
   
 }
 
-Form {
-  
-  margin: 0 3rem 0 3rem;
-  max-width: 400px;
-  
-}
+
 
 .reserveButton:hover{
   background-color: yellow;
@@ -135,6 +137,7 @@ button{
   justify-content: center;
   min-height: 25rem;
   background-color: aliceblue;
+  padding: 1.5rem;
 
 }
 form{
@@ -146,3 +149,7 @@ form{
   border-radius: 10px;
 }
 
+.footer-row{
+  background-color: #5d9280;
+  margin:auto
+}

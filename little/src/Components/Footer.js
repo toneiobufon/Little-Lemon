@@ -12,8 +12,8 @@ export default function Footer(){
     return(
         
        
-            <Row>
-                <Col className="footerNav col-12 p-5" >
+            <Row className="footer-row">
+                <Col className="footerNav" >
                         <Navigation/>
                 </Col>
                 <Col className="col-6 p-3 text-center">
