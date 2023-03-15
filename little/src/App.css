@@ -131,8 +131,18 @@ button{
 }
 
 .section-body{
-  display: flex;
+  display: block;
   justify-content: center;
   min-height: 25rem;
   background-color: aliceblue;
+
 }
+form{
+  display: grid;
+  justify-content: center;
+  background-color: rgb(197, 202, 117);
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+

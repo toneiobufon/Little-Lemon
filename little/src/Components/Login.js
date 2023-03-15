@@ -2,7 +2,13 @@ import React from "react";
 
 
 function Login (){
-    return <h1>Login page</h1>
+    return (
+    <>
+    <section className="section-body">
+        <h1>Login page in construction</h1>
+    </section>
+    </>
+    )
 }
 
 export default Login;
