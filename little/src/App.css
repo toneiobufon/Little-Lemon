@@ -129,3 +129,10 @@ button{
   border-radius: 8px;
   background-color: yellow;
 }
+
+.section-body{
+  display: flex;
+  justify-content: center;
+  min-height: 25rem;
+  background-color: aliceblue;
+}

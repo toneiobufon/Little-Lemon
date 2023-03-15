@@ -2,7 +2,16 @@ import React from "react";
 
 
 function Menu (){
-    return <h1>Menu page</h1>
+    return(
+    <>
+    <section className="section-body">
+    <h1>Menu page under construction</h1>
+
+
+    </section>
+   
+    </>
+    )
 }
 
 export default Menu;
