@@ -18,7 +18,7 @@ export default function Navigation(){
             <Container fluid>
               <Navbar.Brand href="#">
                 <a href="/">
-                    <img src={Logo} alt="Little Lemon" />
+                  <img src={Logo} alt="Little Lemon" />
                 </a>
               </Navbar.Brand>
               <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />

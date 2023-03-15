@@ -53,6 +53,8 @@ Row{
 article{
   width: 250px;
   margin: .5rem;
+  background-color: #a1c1b6;
+  
  
 }
 .footer{
@@ -67,9 +69,21 @@ article{
 
 
 article img{
-  width: 270px;
+  width: 250px;
   height: 230px;
   object-fit: cover;
+}
+
+article p{
+  height: 8rem;
+  width: 250px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+article button{
+  margin-left: 4rem;
+  margin-bottom: 1rem;
 }
 
 .RestaurantChef{
@@ -140,11 +154,12 @@ button{
   padding: 1.5rem;
 
 }
-form{
+Form{
   display: grid;
   justify-content: center;
   background-color: rgb(197, 202, 117);
   margin: auto;
+  margin-bottom: 25px;
   padding: 20px;
   border-radius: 10px;
 }

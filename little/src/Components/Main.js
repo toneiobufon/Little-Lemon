@@ -51,17 +51,17 @@ export default function Main(){
             <Col>
             <article>
                 <img src={Greeksalad} alt="Greek Salad"/>
-                <h1>Greek Salad       $12.99</h1>
+                <h3>Greek Salad       $12.99</h3>
                 <p>The famous greek salad of crispy lettuce, peppers, 
                     olives and our Chicago style feta cheese, garnished with 
-                    crunchy garlic and rosemary croutons. </p>
+                    crunchy garlic and rosemary cruttons. </p>
                 <button>Order a delivery</button>
             </article>
             </Col>
             <Col>
             <article>
                 <img className="bruchetta" src={bruchetta} alt="Bruchetta"/>
-                <h1>Bruchetta    $5.99</h1>
+                <h3>Bruchetta    $5.99</h3>
                 <p>Our Bruschetta is made from grilled bread that has been
                 smeared with garlic and seasoned with salt and olive oil. </p>
                 <button>Order a delivery</button>
@@ -70,7 +70,7 @@ export default function Main(){
             <Col>
             <article>
                 <img src={LemonDessert} alt="Lemon Dessert"/>
-                <h1>Lemon Dessert  $4.99</h1>
+                <h3>Lemon Dessert  $4.99</h3>
                 <p>This comes straight from grandma’s recipe book, 
                     every last ingredient has been sourced and is as 
                     authentic as can be imagined.</p>

@@ -16,6 +16,7 @@ import BookingPage from './Components/BookingPage';
 import OrderOnline from './Components/OrderOnline';
 import Login from './Components/Login';
 import { useEffect, useReducer, useState } from 'react';
+import ConfirmedBooking from './Components/ConfirmedBooking';
 
 // import { useState } from 'react';
 
@@ -76,6 +77,7 @@ function App() {
           <Route path='/reservations' element={<BookingPage/>}></Route>
           <Route path='/orderonline' element={<OrderOnline/>}></Route>
           <Route path='login' element={<Login/>}></Route>
+          <Route path='/confirmation' element={<ConfirmedBooking/>}></Route>
         </Routes>
       </BrowserRouter>
       <Footer/>

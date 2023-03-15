@@ -1,12 +1,16 @@
 import React, { useState} from "react";
-
+import { useNavigate } from "react-router-dom";
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import ConfirmedBooking from "./ConfirmedBooking";
+import userEvent from "@testing-library/user-event";
+
 
 // import AvailableTimes from "./AvailableTimes.js";
 
 
 function ReservationsForm (){
+    const navigate= useNavigate()
 
 
 
@@ -29,7 +33,9 @@ function ReservationsForm (){
             e.stopPropagation();
         }
         // setForm(true)    
-        alert('Reservation Confirmed');
+        navigate('/confirmation')
+        
+        
        
        
         
