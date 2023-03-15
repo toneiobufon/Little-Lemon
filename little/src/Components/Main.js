@@ -21,7 +21,10 @@ export default function Main(){
             <h2>Chicago</h2>
             <p>We are a family owned Mediterranean restaurant, 
                 focused on traditional recipes served with a modern twist.</p>
-            <button>Reserve a table</button>
+             <a href="/reservations">
+             <button>Reserve a table</button>
+            </a>   
+            
             </article>
             </Col>
             <Col>
