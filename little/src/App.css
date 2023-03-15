@@ -6,6 +6,9 @@
     margin-left: 5%;
     margin-right: 5%;
     align-items: center;
+    max-width: 62rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 
  .container {
