@@ -2,7 +2,7 @@ import React, { useState} from "react";
 import { useNavigate } from "react-router-dom";
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-
+import { fetchAPI, submitAPI } from "./utils/mockAPI";
 
 
 
@@ -32,9 +32,9 @@ function ReservationsForm (props){
             e.preventDefault();
             e.stopPropagation();
         }
-        // setForm(true)    
-        console.log(form)
-        // submitAPI(form)
+        
+        submitAPI(FormData)
+        console.log('new  reservation added')
         navigate('/confirmation')
         
         
