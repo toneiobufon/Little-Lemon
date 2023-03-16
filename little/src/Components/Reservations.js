@@ -6,6 +6,7 @@ import { fetchAPI, submitAPI } from "./utils/mockAPI";
 
 
 
+
 // import AvailableTimes from "./AvailableTimes.js";
 
 
@@ -34,15 +35,14 @@ function ReservationsForm (props){
         }
         
         submitAPI(FormData)
+        
         console.log('new  reservation added')
         navigate('/confirmation')
-        
-        
-       
-       
-        
-        
+
     } 
+
+ 
+       
 
     return (
         <>
@@ -50,16 +50,18 @@ function ReservationsForm (props){
         
          <Form validated={true} onSubmit={handleSubmit} className="col-6 center">
          <h1>Reserve Here</h1>
-            <Form.Group className="mb-3" value={form.date}>
+            <Form.Group className="mb-3" value={form.date} >
                 <Form.Label>Choose a date</Form.Label>
                 <Form.Control 
                 type="date" 
                 placeholder="Date"
                 required
+               
                 onChange={(e)=> {
                     setForm({
                         ...form, 
                         date: e.target.value
+
                     })
                 }}
                 />
@@ -90,7 +92,7 @@ function ReservationsForm (props){
 
             <Form.Group className="mb-3" value={form.guests}>
                 <Form.Label>Number of guests</Form.Label>
-                <Form.Control required type="number"  defaultValue={2} min={1} max={10}
+                <Form.Control required type="number"  defaultValue={2} min={2} max={10}
                 onChange={(e)=>{
                     setForm({
                         ...form, 
