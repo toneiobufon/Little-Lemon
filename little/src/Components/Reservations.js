@@ -2,14 +2,14 @@ import React, { useState} from "react";
 import { useNavigate } from "react-router-dom";
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import ConfirmedBooking from "./ConfirmedBooking";
-import userEvent from "@testing-library/user-event";
+
+
 
 
 // import AvailableTimes from "./AvailableTimes.js";
 
 
-function ReservationsForm (){
+function ReservationsForm (props){
     const navigate= useNavigate()
 
 
@@ -33,6 +33,8 @@ function ReservationsForm (){
             e.stopPropagation();
         }
         // setForm(true)    
+        console.log(form)
+        // submitAPI(form)
         navigate('/confirmation')
         
         
@@ -115,7 +117,7 @@ function ReservationsForm (){
                     <option value='Other'>Other</option>
                 </Form.Control>
             </Form.Group>
-            <Button className="reserveButton" variant="primary" type="submit" disabled={!setForm}>
+            <Button className="reserveButton" variant="primary" type="submit" onSubmit={onsubmit} disabled={!setForm}>
                 Book Now
             </Button>
         </Form> 
