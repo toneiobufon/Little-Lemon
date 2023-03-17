@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import { fetchAPI, submitAPI } from "./utils/mockAPI";
+import DatePicker from "react-datepicker";
+import {withFormik} from 'formik'
 
 
 
@@ -12,7 +14,7 @@ import { fetchAPI, submitAPI } from "./utils/mockAPI";
 
 function ReservationsForm (props){
     const navigate= useNavigate()
-
+    
 
 
 
@@ -22,9 +24,6 @@ function ReservationsForm (props){
         guests: '',
         ocassion: ''
     });
-
-
-
 
 
     const handleSubmit=(e) =>{
@@ -56,17 +55,29 @@ function ReservationsForm (props){
                 type="date" 
                 placeholder="Date"
                 required
-               
+                
                 onChange={(e)=> {
                     setForm({
                         ...form, 
                         date: e.target.value
-
                     })
                 }}
-                />
-                
+                /> 
+
+              
             </Form.Group>
+
+
+
+
+
+
+
+
+
+
+
+
 
             <Form.Group className="mb-3" placeholder="Check available times" type='number' value={form.time}  defaultValue=''>
                 <Form.Label>Choose from the available times</Form.Label>
