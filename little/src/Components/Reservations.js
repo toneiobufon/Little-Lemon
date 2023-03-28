@@ -130,7 +130,7 @@ function ReservationsForm (props){
                     <option value='Other'>Other</option>
                 </Form.Control>
             </Form.Group>
-            <Button className="reserveButton" variant="primary" type="submit" onSubmit={onsubmit} disabled={!setForm}>
+            <Button className="reserveButton" variant="primary" type="submit" onSubmit={onsubmit} disabled={!setForm} aria-label="On Click">
                 Book Now
             </Button>
         </Form> 
