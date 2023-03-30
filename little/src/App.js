@@ -45,6 +45,8 @@ function App() {
         console.log(setAvailableTimes)
     }
 
+
+    
     useEffect(() => {
       fetchData();
     },[]);
